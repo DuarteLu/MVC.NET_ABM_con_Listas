@@ -1,0 +1,67 @@
+﻿@model List<Entidades.Compra>
+
+@{
+    ViewBag.Title = "Resultado";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Resultado</h2>
+<table class="table">
+    <tr>
+        <th>
+            Producto
+        </th>
+        <th>
+            Precio Unitario
+        </th>
+        <th>
+            Cantidad
+        </th>
+        <th>
+            Descuento
+        </th>
+        <th>
+            Incentivo
+        </th>
+        <th>
+            =
+        </th>
+        <th>
+            Importe Total Compra
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Producto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrecioUnitario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cantidad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descuento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Incentivo)
+            </td>
+
+            <td>
+                =
+            </td>
+            <td>
+                @item.CalcularImporteTotal()
+            </td>
+        </tr>
+    }
+
+</table>
+
+<div>
+    @Html.ActionLink("Volver a inicio", "Bienvenido", "Presentacion")
+</div>

@@ -1,0 +1,30 @@
+﻿@model List<Entidades.Animal>
+@{
+    ViewBag.Title = "Alimentacion";
+}
+
+<h2>Alimentacion</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Especie</th>
+            <th>Peso</th>
+            <th>Alimentación</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(Entidades.Animal p in Model)
+        {
+            <tr>
+                <td>@p.Especie</td>
+                <td>@p.Peso</td>
+                <td>@p.CalcularAlimento()</td>
+            </tr>
+        }
+
+    </tbody>
+
+</table>
+
+@Html.ActionLink("Volver a Cargar","Alta")

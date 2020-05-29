@@ -1,0 +1,21 @@
+﻿@model Entidades.Persona
+@{
+    ViewBag.Title = "Detalle";
+}
+
+<h2>Detalle</h2>
+<form action="/Persona/Editar" method="post">
+    Nombre:
+    <input type="Text" name="Nombre" value="@Model.Nombre" />
+
+    Apellido:
+    <input type="text" name="Apellido"  value="@Model.Apellido"/>
+
+    Ingreso Mensual:
+    <input type="number" name="IngresoMensual" value="@Model.IngresoMensual"/>
+
+    <input type="hidden" name="Id" value="@Model.id" />
+
+    <input type="submit" value="Modificar" />
+
+</form>

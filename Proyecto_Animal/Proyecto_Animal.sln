@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proyecto_Animal", "Proyecto_Animal\Proyecto_Animal.csproj", "{FF21FCD7-C4E0-4444-BAD6-397142050602}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{40909BBC-AB31-4A57-B2F0-FAAB08F1FF29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servicios", "Servicios\Servicios.csproj", "{2F23DE6B-7035-4FF4-9ED1-35F21FF2D225}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF21FCD7-C4E0-4444-BAD6-397142050602}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF21FCD7-C4E0-4444-BAD6-397142050602}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF21FCD7-C4E0-4444-BAD6-397142050602}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF21FCD7-C4E0-4444-BAD6-397142050602}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40909BBC-AB31-4A57-B2F0-FAAB08F1FF29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40909BBC-AB31-4A57-B2F0-FAAB08F1FF29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40909BBC-AB31-4A57-B2F0-FAAB08F1FF29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40909BBC-AB31-4A57-B2F0-FAAB08F1FF29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F23DE6B-7035-4FF4-9ED1-35F21FF2D225}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F23DE6B-7035-4FF4-9ED1-35F21FF2D225}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F23DE6B-7035-4FF4-9ED1-35F21FF2D225}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F23DE6B-7035-4FF4-9ED1-35F21FF2D225}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C5B38E50-A7D6-48FD-BDA6-57F10052A2E1}
+	EndGlobalSection
+EndGlobal

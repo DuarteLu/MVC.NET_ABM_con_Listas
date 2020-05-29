@@ -1,0 +1,33 @@
+﻿@model List<Entidades.Persona>
+@{
+    ViewBag.Title = "Lista";
+}
+
+<h2>Lista</h2>
+
+<table class="Table">
+    <thead>
+        <tr>
+            <td>Nombre</td>
+            <td>Apellido</td>
+            <td>Ingreso Mensual</td>
+            <td>Impuesto</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var p in Model)
+        {
+            <tr>
+                <td>@p.Nombre</td>
+                <td>@p.Apellido</td>
+                <td>@p.IngresoMensual</td>
+                <td>@p.CalcularImpuesto()</td>
+                <td>@Html.ActionLink("Ver detalle","Detalle",new { id = p.id })</td>
+                <td>@Html.ActionLink("Borrar","Borrar",new { id = p.id })</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@Html.ActionLink("Nueva", "Nueva")
+
